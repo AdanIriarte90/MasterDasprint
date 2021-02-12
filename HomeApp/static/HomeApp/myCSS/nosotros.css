@@ -1,0 +1,54 @@
+@font-face {
+    font-family: biome;
+    src: url("../fonts/biome.woff");
+  }
+
+.GeneralContent{
+    width: 100%;
+    height: 88%;
+    /*text-align: center;*/
+}
+
+.contentDescription{
+    position: relative;
+    padding-left: 200px;
+    padding-top: 100px;
+    width: 800px;
+    height: 300px;
+    text-align: justify;
+}
+
+.contentDescription p{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contentMedia{
+    position: relative;
+    bottom: 150px;
+    margin-left: 870px;
+
+}
+
+.contentMedia .img{
+    width: 300px;
+    height: 400px;
+}
+
+.nuestrosClientes{
+    position: relative;
+    bottom: 725px;
+    left: 915px;
+    width: 300px;
+    /*border: black 1px solid;*/
+}
+
+.nuestrosClientes .img{
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+}
+
+.cintaClientes{
+
+}

@@ -1,0 +1,92 @@
+ .footer_container {
+    position: absolute;
+    text-align: center;
+    color: white;
+    /*margin-bottom: 10%;*/
+  }
+  
+ .footer_bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+  .iconos{
+      width: 50px;
+      height: 50px;
+  }
+
+  .logoDAS{
+    position: relative;
+    width: 170px;
+    height: 90px;
+    margin-left: 84%;
+    bottom: 16px;
+    /*padding-left: 160px;*/
+  }
+
+  .navbar-base{
+    margin-left: 25%;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .navbar-base .element{
+    nav-left: initial;
+    display: inline;
+    border-right: 5px solid black;
+    padding-left: 30px;
+  }
+
+  .navbar-base .element:hover{
+    /*background-image: url("../Images/marcador_menu.png");*/
+    background-color: #8C248C;
+    background-repeat: repeat-x;
+  }
+
+  .navbar-base a{
+    color:white;
+    /*font-family: cursive;*/
+    font-size: 20px;
+    font-weight: 50px;
+    text-shadow: -1px 0 #8C248C, 0 1px #8C248C, 1px 0 #8C248C, 0 -1px #8C248C;    
+  }
+
+  .navbar-base a:hover{
+    text-decoration: none;
+  }
+
+  .div-logos-redes-sociales{
+    position: fixed;
+    margin-left: 90%;    
+  }
+
+  .div-logos-redes-sociales .fbDiv{
+    background-color: #8C248C;
+    height: 100px;
+    /*width: 50px;*/
+    padding-right: 5px;
+  }
+
+  .div-logos-redes-sociales .waDiv{
+    background-color: #8C248C;
+    height: 100px;
+    position: relative;
+    bottom: 101px;
+    left: 50px;
+  }
+
+  .div-logos-redes-sociales .facebook-img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .div-logos-redes-sociales .WhatsApp-img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .texto1{
+    font-size: 13px;
+  }

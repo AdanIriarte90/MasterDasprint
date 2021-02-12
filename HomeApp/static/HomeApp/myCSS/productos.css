@@ -1,0 +1,39 @@
+.div-content{
+    width: 100%;
+    height: 88%;
+    padding: 50px;
+}
+
+.carousel-item{
+    left: 14%;
+    width: 900px;
+    height: 450px;
+}
+
+.carousel-item img{
+    width: 900px;
+    height: 450px;
+}
+
+.carousel-control-prev{
+    left: 150px;
+}
+
+.carousel-control-prev:hover{    
+    background-color:rgb(230, 230, 230);
+    opacity: 0.3;
+}
+
+.carousel-control-next{
+    left: 900px;
+}
+
+.carousel-control-next:hover{
+    background-color: rgb(230, 230, 230);
+    opacity: 0.3;
+}
+
+.carousel-indicators{
+    margin-right: 15%;
+}
+

@@ -1,0 +1,37 @@
+{% extends "HomeApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'HomeApp/myCSS/nosotros.css' %}">
+<div class="GeneralContent">
+    <div class="contentDescription">
+        <h1>¿Qienes somos?</h1>
+        <br/><br/>
+        <p>
+            En DAS reconocemos a aquellos emprendedores o empresarios que buscan transmitir un mensaje a traves de su publicidad.
+            <br/><br/>
+            Sabemos lo dificil que es hacer crecer tu negocio, e influir positivamente en tu equipo de trabajo, y entendemos que el marketing y la publicidad son herramientas clave para ti.
+            <br/><br/>
+            DAS es una empresa orgullosamente Mexicana dedicada a las artes graficas, que busca hacer un equipo con sus clientes en sus actividades de comunicacion. Nos gustan los retos, encontrar soluciones diferentes y creativas para ofrecerte las mejores alternativas para las necesidades de tu negocio.
+        </p>
+    </div>
+
+    <div class="contentMedia">
+        <img class="img" src="{% static 'HomeApp/Images/foco.png' %}">
+    </div>
+
+    <!-- <div class="nuestrosClientes">
+        Nuestros clientes:
+        <br>
+        <img class="img" src="{% static 'HomeApp/Images/acolman.png' %}">
+        <img class="img" src="{% static 'HomeApp/Images/camiones_europeos.png' %}">
+        <img class="img" src="{% static 'HomeApp/Images/cdk.png' %}">
+        <img style="width: 100px; height: 70px; padding: 5px;" src="{% static 'HomeApp/Images/dif_acolman.png' %}">
+        <img style="width: 100px; height: 70px; padding: 5px;" src="{% static 'HomeApp/Images/dif_atenco.png' %}">
+        <img class="img" src="{% static 'HomeApp/Images/dkt.png' %}">
+        <img class="img" src="{% static 'HomeApp/Images/prudence.png' %}">
+    </div> -->
+</div>
+
+{% endblock %}

@@ -1,0 +1,99 @@
+{% extends "HomeApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'HomeApp/myCSS/contacto.css' %}">
+
+<div class="div-content">
+    <form action="/resultForm/" method="POST">{% csrf_token %}
+        {{form.as_p}}
+        <table class="table-form">
+            <tr>
+                <td>
+                    <h1>Contactanos</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Nombre:</label>
+                </td>
+                <td>
+                    <input class="form-control" type="text" name="nombre">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email:</label>
+                </td>
+                <td>
+                    <input class="form-control" type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Telefono:</label>
+                </td>
+                <td>
+                    <input class="form-control" type="tel" name="telefono">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Mensaje:</label>
+                </td>
+                <td>
+                    <textarea class="form-control" name="mensaje"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+                </td>
+                <td>
+                                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{email_response}}
+                </td>
+            </tr>
+        </table>        
+    </form>
+    <div class="right-content">
+        <p class="p-direcciones">
+            <b>Sucursal 1: </b>Avenida 16 de Septiembre, Local 2, Colonia San Pablito Chinconcuac, Estado de Mexico.
+        </p>
+        <p class="p-direcciones">
+            <b>Sucursal 2: </b>Juan E. Hernandez y Davalos 92, Plaza Teresita Local 4, Algarin
+            Cuahutemoc, C.P. 06880, CDMX.
+        </p>
+        <p class="p-direcciones">
+            <b>Telefonos: </b>55-88487010<b>/</b>55-88485097
+        </p>
+            <!--The div element for the map -->
+    <div id="map">
+
+    </div>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+        // The location of Uluru
+        var uluru = {lat:19.40678981439474, lng:-99.13932410320507};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 17, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+    </script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUGNtnWhSkZJuSRyenCZ1x_x6OtqtcZA8&callback=initMap">
+    </script>
+
+    </div>
+</div>
+
+{% endblock %}

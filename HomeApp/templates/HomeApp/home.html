@@ -1,0 +1,14 @@
+{% extends "HomeApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'HomeApp/myCSS/home.css' %}">
+
+<img class="fondo" src="{% static 'HomeApp/Images/fondo2.jpg' %}">
+<div class="div-cotizar">
+    <img class="btnCotizar" src="{% static 'HomeApp/Images/cotizacion.png' %}">
+    <img class="facturacion-letras" src="{% static 'HomeApp/Images/facturacion_letras.png' %}"> 
+</div>
+
+{% endblock %}
